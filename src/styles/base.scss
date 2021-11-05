@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+#root {
+  padding: 15px;
+}
+
+form {
+  padding: 15px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+input {
+  display: block;
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+form button {
+  display: block;
+}
+
+button:hover {
+  color: blue;
+  background-color: rgb(147, 147, 233);
+}
+
+.main_container {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: rgb(43, 43, 223);
+}
