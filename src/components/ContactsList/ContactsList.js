@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ContactItem from '../ContactItem';
-import './ContactsList.scss';
+import s from './ContactsList.module.scss';
 
 const ContactsList = ({ contacts, onDeleteContact }) => {
   return (
-    <ul className="contact_list">
+    <ul className={s.contact_list}>
       {contacts.map(contact => (
-        <li key={contact.id} className="contactItem">
-          <ContactItem contact={contact} onDeleteContact={onDeleteContact} />
-        </li>
+        <ContactItem contact={contact} onDeleteContact={onDeleteContact} />
       ))}
     </ul>
   );

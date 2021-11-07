@@ -3,6 +3,7 @@ import ContactInput from './components/ContactInput';
 import ContactsList from './components/ContactsList/ContactsList';
 import ShortId from 'shortid';
 import Filter from './components/ContactFilter';
+import s from './styles/base.module.scss';
 
 class App extends Component {
   state = {
@@ -58,7 +59,7 @@ class App extends Component {
     const filteredNumbers = this.contactFilter();
 
     return (
-      <div className="main_container">
+      <div className={s.main_container}>
         <h1 className="title">Phonebook</h1>
 
         <ContactInput onSubmit={this.handlerContact} />
